@@ -1,21 +1,24 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+char grade;
+printf("Please enter your grade below");
+scanf("%s" , &grade);
+switch (grade)
+{
+case 'A':
+printf("You did very great.");
+  
+  break;
+case 'B':
+printf("Not bad");
+break;
 
-
-int max(int num1, int num2){
-if(num1 > num2){
-  return num1;
-} else if(num2 > num1){
-  return num2;
+default:
+printf("You flunked!");
+  break;
 }
-else return 0;
-}
-
-
-int main(){
-
-printf("%d", max(2,4));
-
-    return 0;
+  return 0;
 }
